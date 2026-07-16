@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valtheos - Portal Oficial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="Valtheos.png" alt="Valtheos Logo" class="main-logo">
+        </div>
+        <nav class="nav-links">
+            <button class="nav-btn active" onclick="goToSlide(0)">Página Inicial</button>
+            <button class="nav-btn" onclick="goToSlide(1)">Conteúdos</button>
+            <button class="nav-btn" onclick="goToSlide(2)">Guias</button>
+            <button class="nav-btn" onclick="goToSlide(3)">Loja</button>
+            <button class="nav-btn" onclick="goToSlide(4)">Recrutamento</button>
+        </nav>
+    </header>
+
+    <button class="arrow prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="arrow next" onclick="moveSlide(1)">&#10095;</button>
+
+    <main class="carousel-container">
+        <div class="carousel-track" id="track">
+
+            <section class="slide slide-inicio">
+                <div class="slide-content">
+                    <h1>Bem-vindo a Valtheos</h1>
+                    <p>Explore as crônicas e segredos perdidos de Valtheos. Navegue pelas guias para dar início à sua jornada.</p>
+                    <button class="cta-button" onclick="goToSlide(1)">Começar Exploração</button>
+                </div>
+            </section>
+
+            <section class="slide slide-conteudos">
+                <div class="slide-content">
+                    <h2>Nossos Conteúdos</h2>
+                    <p>Desfrute dos mais variados conteúdos de albion online, desde um PvE mais tranquilo para sua evolução no jogos ao PvP mais frenético e selvagem.</p>
+                    <article class="post-preview">
+                        <h3>O Alvorecer da Nova Era</h3>
+                        <p>Os selos antigos estão enfraquecendo. Leia a crônica mais recente de nossa saga oficial...</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="slide slide-guias">
+                <div class="slide-content">
+                    <h2>Nossos Guias</h2>
+                    <p>Tudo o que você precisa para dominar as rotas, táticas e mistérios.</p>
+                    <div class="grid-container">
+                        <div class="card">
+                            <h3>Iniciantes</h3>
+                            <p>Passos fundamentais para trilhar os caminhos iniciais do reino.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Avançado</h3>
+                            <p>Estratégias de combate detalhadas e mecânicas de alta complexidade.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="slide slide-loja">
+                <div class="slide-content">
+                    <h2>Loja da Guilda</h2>
+                    <p>Participe dos conteúdos da guilda e acumule pontos. Você pode trocar esses pontos na nossa lojinha e resgatar recompensas incíveis.</p>
+                    <div class="grid-container">
+                        <div class="card product-card">
+                            <div class="product-placeholder">🎁</div>
+                            <h3>1 Semana de Premium</h3>
+                            <span class="price">700 Moedas</span>
+                            <button class="buy-button">Adquirir</button>
+                        </div>
+                        <div class="card product-card">
+                            <div class="product-placeholder">🎁</div>
+                            <h3>1 Mês de Premium</h3>
+                            <span class="price">1000 Moedas</span>
+                            <button class="buy-button">Adquirir</button>
+                        </div>
+                        <div class="card product-card">
+                            <div class="product-placeholder">🎁</div>
+                            <h3>3 Meses de Premium</h3>
+                            <span class="price">3000 Moedas</span>
+                            <button class="buy-button">Adquirir</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="slide slide-recrutamento">
+                <div class="slide-content">
+                    <h2>Recrutamento</h2>
+                    <p>Deseja somar forças ao nosso conselho ou apoiar o desenvolvimento? Envie sua ficha de inscrição.</p>
+                    <form class="recruitment-form" onsubmit="event.preventDefault(); alert('Inscrição enviada com sucesso!');">
+                        <input type="text" placeholder="Seu Nome / Alcunha" required>
+                        <input type="email" placeholder="Seu E-mail" required>
+                        <textarea placeholder="Conte-nos sobre seus talentos ou por que deseja fazer parte de Valtheos..." rows="4" required></textarea>
+                        <button type="submit" class="submit-button">Enviar Candidatura</button>
+                    </form>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-left">
+            <span>© 2026 Valtheos. Todos os direitos reservados.</span>
+        </div>
+        <div class="footer-right">
+            <span>Desenvolvido por Emanuzada</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
