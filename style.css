@@ -34,7 +34,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 3rem;
+    padding: 0.3rem 5rem;
     z-index: 10;
     background: linear-gradient(to bottom, rgba(31, 45, 74, 0.95), rgba(31, 45, 74, 0));
     border-bottom: 2px solid rgba(234, 180, 68, 0.2);
@@ -48,7 +48,7 @@ body {
 }
 
 .main-logo {
-    max-height: 100px; /* Mantém uma altura elegante para a navbar */
+    max-height: 170px; /* Mantém uma altura elegante para a navbar */
     width: auto;
     object-fit: contain;
     display: block;
@@ -63,7 +63,7 @@ body {
     background: none;
     border: none;
     color: var(--bg-light);
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 500;
     cursor: pointer;
     padding: 0.5rem 1rem;
@@ -124,17 +124,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 10%;
+    padding: 0 5%;
     background-size: cover;
     background-position: center;
 }
 
 /* Gradientes combinando as cores da paleta para os fundos dos slides */
-.slide-inicio { background: linear-gradient(135deg, #1f2d4a, #0d1525); }
-.slide-guias { background: linear-gradient(135deg, #261f36, #120e1a); }
-.slide-conteudos { background: linear-gradient(135deg, #142a27, #0a1514); }
-.slide-loja { background: linear-gradient(135deg, #24221f, #12110f); }
-.slide-recrutamento { background: linear-gradient(135deg, #1b263b, #1f2d4a); }
+.slide-inicio { background: linear-gradient(135deg, #152546, #0d1525); }
+.slide-guias { background: linear-gradient(135deg, #3b2906, #120e1a); }
+.slide-conteudos { background: linear-gradient(135deg, #152546, #0a1514); }
+.slide-loja { background: linear-gradient(135deg, #3b2906, #120e1a); }
+.slide-recrutamento { background: linear-gradient(135deg, #152546, #1f2d4a); }
 
 /* Caixa de Conteúdo dos Slides (Glassmorphism) */
 
@@ -201,7 +201,7 @@ body {
 .card h3 {
     margin-bottom: 0.5rem;
     color: var(--accent-gold);
-    font-family: 'Georgia', serif;
+    font-family:
 }
 
 /* Loja */
